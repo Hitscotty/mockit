@@ -6,12 +6,12 @@ import {
   Scripts,
   ScrollRestoration,
 } from "remix";
-import Header from "./components/sections/header";
-import Footer from "./components/sections/footer";
+
 import AuthProvider from "./providers/auth";
 
 import bpStyles from "@blueprintjs/core/lib/css/blueprint.css";
 import bpIconStyles from "@blueprintjs/icons/lib/css/blueprint-icons.css";
+import Layout from "./components/layouts/default-layout";
 
 export const links = () => [
   { rel: "stylesheet", href: bpStyles },
@@ -31,12 +31,12 @@ export default function App() {
       </head>
       <body>
         <AuthProvider>
-          <Header />
-          <Outlet />
-          <ScrollRestoration />
-          <Scripts />
-          <LiveReload />
-          <Footer />
+          <Layout>
+            <Outlet />
+            <ScrollRestoration />
+            <Scripts />
+            <LiveReload />
+          </Layout>
         </AuthProvider>
       </body>
     </html>
