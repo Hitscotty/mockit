@@ -6,10 +6,19 @@ import {
   Scripts,
   ScrollRestoration,
 } from "remix";
+import Header from "./components/sections/header";
+import Footer from "./components/sections/footer";
+import AuthProvider from "./providers/auth";
 
-export function meta() {
-  return { title: "New Remix App" };
-}
+import bpStyles from "@blueprintjs/core/lib/css/blueprint.css";
+import bpIconStyles from "@blueprintjs/icons/lib/css/blueprint-icons.css";
+
+export const links = () => [
+  { rel: "stylesheet", href: bpStyles },
+  { rel: "stylesheet", href: bpIconStyles },
+];
+
+export const meta = () => ({ title: "MockIT" });
 
 export default function App() {
   return (
@@ -21,10 +30,14 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <Outlet />
-        <ScrollRestoration />
-        <Scripts />
-        <LiveReload />
+        <AuthProvider>
+          <Header />
+          <Outlet />
+          <ScrollRestoration />
+          <Scripts />
+          <LiveReload />
+          <Footer />
+        </AuthProvider>
       </body>
     </html>
   );
