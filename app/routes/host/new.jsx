@@ -2,7 +2,7 @@ export default function HostNew() {
   return (
     <div className="flex justify-center">
       <div className="mt-5 md:mt-0">
-        <h1 className="text-center font-bold text-lg mb-4"> Host a MockIt</h1>
+        <h1 className="text-center font-bold text-lg mb-4">Host a MockIt</h1>
         <form action="#" method="POST">
           <div className="shadow sm:rounded-md sm:overflow-hidden">
             <div className="columns-2 px-4 py-5 bg-white space-y-6 sm:p-6">
