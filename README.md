@@ -18,7 +18,13 @@
 
 ## This Project
 
-MockIT transforms how mock interviews are held. This application connects the user to a live interviewer to practice interview questions created by the interviewer. Student users are able to search for an interview by the topic or company. By creating an interactive platform for students to conduct interviews, this project aims to encourage inclusivity in the educational environment.
+MockIT transforms how mock interviews are held. This application connects the user to a live interviewer to practice interview questions created by the interviewer. Student users are able to search for an interview by the topic or company. 
+
+A bright shade of blue and yellow were used as a color theme for this application, as the majority of the user base is students.
+- ![#efb206](https://via.placeholder.com/15/efb206/000000?text=+) `#efb206`
+- ![#00aed6](https://via.placeholder.com/15/00aed6/000000?text=+) `#00aed6`
+
+By creating an interactive platform for students to conduct interviews, this project aims to encourage inclusivity in the educational environment.
 
 ## Development
 
@@ -66,15 +72,15 @@ Make sure to deploy the output of `remix build`
 
 When you ran `npx create-remix@latest` there were a few choices for hosting. You can run that again to create a new project, then copy over your `app/` folder to the new project that's pre-configured for your target server.
 
-```sh
-cd ..
+```bash
+$ cd ..
 # create a new project, and pick a pre-configured host
-npx create-remix@latest
-cd my-new-remix-app
+$ npx create-remix@latest
+$ cd my-new-remix-app
 # remove the new project's app (not the old one!)
-rm -rf app
+$ rm -rf app
 # copy your app over
-cp -R ../my-old-remix-app/app app
+$ cp -R ../my-old-remix-app/app app
 ```
 
 ## Credits
