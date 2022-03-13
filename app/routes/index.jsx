@@ -7,8 +7,8 @@ export const links = () => [{ rel: "stylesheet", href: styles }];
 export default function Index() {
   return (
     <div className="flex flex-col">
-      <Banner className={"mb-4 mt-4"} />
-      <About className={"space-x-4"} />
+      <Banner className="mb-4 mt-4" />
+      <About className="space-x-4" />
     </div>
   );
 }
