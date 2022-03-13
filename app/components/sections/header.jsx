@@ -1,7 +1,7 @@
 import { Alignment, Button, Navbar } from "@blueprintjs/core";
 
 const Header = () => (
-  <Navbar align={Alignment.CENTER}>
+  <Navbar align={Alignment.CENTER} className="">
     <Navbar.Group align={Alignment.LEFT}></Navbar.Group>
     <Navbar.Group>
       <Navbar.Heading>MockIT</Navbar.Heading>

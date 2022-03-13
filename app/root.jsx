@@ -9,11 +9,13 @@ import {
 
 import AuthProvider from "./providers/auth";
 
+import styles from "~/tailwind.css";
 import bpStyles from "@blueprintjs/core/lib/css/blueprint.css";
 import bpIconStyles from "@blueprintjs/icons/lib/css/blueprint-icons.css";
 import Layout from "./components/layouts/default-layout";
 
 export const links = () => [
+  { rel: "stylesheet", href: styles },
   { rel: "stylesheet", href: bpStyles },
   { rel: "stylesheet", href: bpIconStyles },
 ];
@@ -29,7 +31,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body style={{ margin: 0 }}>
         <AuthProvider>
           <Layout>
             <Outlet />

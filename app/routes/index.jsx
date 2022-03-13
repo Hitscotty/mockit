@@ -1,11 +1,14 @@
 import Banner from "~/components/sections/banner";
-import Main from "~/components/sections/main";
+import About from "~/components/sections/about";
+import styles from "~/styles/index.css";
+
+export const links = () => [{ rel: "stylesheet", href: styles }];
 
 export default function Index() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
-      <Banner />
-      <Main />
+    <div className="flex flex-col">
+      <Banner className={"mb-4 mt-4"} />
+      <About className={"space-x-4"} />
     </div>
   );
 }
