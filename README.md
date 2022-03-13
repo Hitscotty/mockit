@@ -1,29 +1,54 @@
-# Welcome to Remix!
+<h1 align="center">
+  <br>
+  <a href="https://github.com/Hitscotty/mockit"><img src="https://raw.githubusercontent.com/Hitscotty/mockit/main/public/wordmark.svg" alt="MockIT Logo" width="400"></a>
+  <br>
+  MockIT <img src="https://raw.githubusercontent.com/Hitscotty/mockit/main/public/icon.svg" width="30">
+  <br>
+</h1>
 
-- [Remix Docs](https://remix.run/docs)
+<h4 align="center">An application that allows users to both conduct and participate in mock interviews.</h4> 
+
+<p align="center">
+  <a href="#this-project">This Project</a> •
+  <a href="#development">Development</a> •
+  <a href="#deployment">Deployment</a> •
+  <a href="#credits">Credits</a> •
+  <a href="#license">License</a>
+</p>
+
+## This Project
+
+MockIT transforms how mock interviews are held. This application connects the user to a live interviewer to practice interview questions created by the interviewer. Student users are able to search for an interview by the topic or company. By creating an interactive platform for students to conduct interviews, this project aims to encourage inclusivity in the educational environment.
 
 ## Development
 
-From your terminal:
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your terminal:
 
-```sh
-npm run dev
+```bash
+# Clone this repository
+$ git clone https://github.com/Hitscotty/mockit.git 
+
+# Go into the repository
+$ cd mockit
+
+# Install dependencies
+$ npm install
+
+# Start the development server
+$ npm run build
+$ npm run dev
 ```
 
 This starts your app in development mode, rebuilding assets on file changes.
 
 ## Deployment
 
-First, build your app for production:
+```bash
+# First, build your app for production:
+$ npm run build
 
-```sh
-npm run build
-```
-
-Then run the app in production mode:
-
-```sh
-npm start
+# Then run the app in production mode:
+$ npm start
 ```
 
 Now you'll need to pick a host to deploy it to.
@@ -51,3 +76,15 @@ rm -rf app
 # copy your app over
 cp -R ../my-old-remix-app/app app
 ```
+
+## Credits
+
+This software uses the following open source packages:
+
+- [Node.js](https://nodejs.org/)
+- [tailwindcss](https://tailwindcss.com/)
+- [Remix Docs](https://remix.run/docs)
+
+## License
+
+MIT
