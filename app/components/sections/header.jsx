@@ -26,7 +26,7 @@ const Header = () => {
             to="/create-account"
             className="inline-block text-sm px-4 py-2 leading-none border rounded text-black border-black hover:border-transparent hover:text-teal hover:bg-white mt-4 lg:mt-0"
           >
-            Create Account
+            Sign Up
           </Link>
           <Link
             to="/login"
