@@ -50,7 +50,7 @@ This starts your app in development mode, rebuilding assets on file changes.
 ## Deployment
 
 ```bash
-# First, build your app for production:
+# First build your app for production:
 $ npm run build
 
 # Then run the app in production mode:
