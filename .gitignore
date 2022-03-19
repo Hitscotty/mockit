@@ -5,4 +5,11 @@ node_modules
 /public/build
 .env
 
-/app/tailwind.css
+/cypress/screenshots
+/cypress/videos
+/prisma/data.db
+/prisma/data.db-journal
+
+/app/styles/tailwind.css
+**/.DS_Store
+
