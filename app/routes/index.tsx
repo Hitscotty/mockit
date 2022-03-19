@@ -1,8 +1,5 @@
 import Banner from "~/components/sections/banner";
 import About from "~/components/sections/about";
-import styles from "~/styles/index.css";
-
-export const links = () => [{ rel: "stylesheet", href: styles }];
 
 export default function Index() {
   return (
